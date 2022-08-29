@@ -51,7 +51,7 @@
 #### password less authentication
    ### Generate ssh keys
    44  ssh-keygen -t rsa
-   ### Copy the id_rsa.pub content and paste it in github SSH key by
+   ### Copy the id_rsa.pub content and paste it in https://github.com/settings/ssh/new
    45  cat /c/Users/gopal/.ssh/id_rsa.pub
    
 #### Establish connection
