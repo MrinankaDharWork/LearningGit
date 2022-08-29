@@ -1,0 +1,68 @@
+##### creating git global variables. 
+    1  git config --global user.name "MrinankaDharWork"
+    2  git config --global user.email "dhar_mrinanka@lilly.com"
+####  create a dir and add some file
+    5  mkdir project
+    6  cd project
+    7  touch calcy.py
+    8  ls
+    9  git status
+###  how to intialized git repo
+   10  git init
+   11  ls -la
+   12  git status
+   13  rm -rf .git
+   14  git status
+   15  git init
+   16  git status
+### our first commit
+   17  git add calcy.py
+   18  git status
+   19  git commit -m "intial commit"
+   20  git status
+   21  git log
+
+#### .gitignore
+   22  git status
+   23  git add .
+   24  git status
+   25  git reset
+   26  git status
+   27  touch .gitignore
+   28  nano .gitignore ### File names to be ignored in git status
+   29  cat .gitignore
+   30  git status
+   31  history
+
+####  modify calcy.py
+   32  nano calcy.py
+   33  git add .
+   34  git commit -m "first calcy program"
+   35  git log
+   36  git status
+   37  cat calcy.py
+   38  nano calcy.py
+   39  git status
+   40  git diff
+   41  git add .
+   42  git commit -m "second commit"
+   43  git log
+
+#### password less authentication
+   ### Generate ssh keys
+   44  ssh-keygen -t rsa
+   ### Copy the id_rsa.pub content and paste it in github SSH key by
+   45  cat /c/Users/gopal/.ssh/id_rsa.pub
+   
+#### Establish connection
+   46  Create a repo in GITHUB
+   ### Add a remote origin
+   47  git remote add origin git@github.com:MrinankaDharWork/testingRepo.git
+   48  git branch -M main
+   49  git push -u origin main 
+#### View Existing REMOTE URL
+   50  git remote -v
+#### Remove a remote URL
+   51  git remote rm "NAME without quotes (Ex. origin)"
+#### To see if existing SSH keys are present
+   52  ls -al ~/.ssh
