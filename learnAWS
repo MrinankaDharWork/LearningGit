@@ -1,0 +1,24 @@
+How to set up APACHE WEBSERVER in AWS:
+
+
+    0  yum update -y
+    1  yum install httpd
+    2  systemctl status httpd
+    3  systemctl start httpd
+    4  systemctl status httpd
+    5  history
+    6  clear
+    7  history
+    8  systemctl status httpd
+   10  systemctl enable httpd
+   11  curl localhost
+   12  nano /var/www/html/index.html
+   
+   How to host your own website 
+   18  cd /var/www/html
+   19  ls
+   20  wget https://www.free-css.com/assets/files/free-css-templates/download/page282/yogasana.zip
+   21  ls
+   22  unzip yogasana.zip
+
+ then type publicIP/index.html to access the website
