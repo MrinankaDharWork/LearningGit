@@ -59,9 +59,29 @@
 ####  show commits and view contents of commits.
   141  git log --oneline
   142  git show head    <---show the head note commit description
-  143  git show head~2.  <------- 2 step back from head node
+  143  git show head~2  <------- 2 step back from head node
+  144  git ls-tree head <----- all/exact files and folder in the commit
 
-
+##### git show commad
+     using git show we can view an object in git database;
+     example ----->
+---------------------------------------------------------------------   
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> output<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+L037185@GG4HH6N7TX FireBasseDemoApp % git ls-tree heAD
+100644 blob aa724b77071afcbd9bb398053e05adaf7ac9405a    .gitignore. <---- blob is files
+040000 tree cbb3369f6f4c30d06e6dece5b823534aec36510f    .idea       <---- tree is folder
+---------------------------------------------------------------------
+## see an object in git database
+   145 git show aa724b77071afcbd9bb398053e05adaf7ac9405a
+---------------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> output<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+---------------------------------------------------------------------
 
 #### password less authentication
    ### Generate ssh keys
