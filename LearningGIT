@@ -21,6 +21,10 @@
    19  git commit -m "intial commit"
    20  git status
    21  git log
+####. commit without staging
+    1 git commit-a -m "skipped staging"
+
+
 
 #### .gitignore
    22  git status
@@ -33,6 +37,10 @@
    29  cat .gitignore
    30  git status
    31  history
+   
+#### Reove from staging area.
+    1 git rm --cached -r filename/dir_name
+    2 git ls-files  <----- varify if its still there
 
 ####  modify calcy.py
    32  nano calcy.py
