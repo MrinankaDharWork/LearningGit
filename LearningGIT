@@ -24,7 +24,13 @@
 ####. commit without staging
     1 git commit-a -m "skipped staging"
 
-
+#### UnStage Changes (RESTORE)
+>>>>> This basiclyy pull out the older commit and put it in the staging area and deletes the current stage
+   1 git restore --staged file1.text  
+   
+   
+### Restore from previos versions:
+   1 git restore --source=HEAD~1 file1.txt
 
 #### .gitignore
    22  git status
@@ -109,3 +115,14 @@ L037185@GG4HH6N7TX FireBasseDemoApp % git ls-tree heAD
 
    ### git stash 
    ### git rebase
+
+
+
+
+############################################################### Theory ###############################################################
+--------------------------------------------------------------------------------------------------------------------------------------
+# Git Objects :
+               1: Commits
+               2: Blobs ( Files)
+               3: Tee. (Directory)
+               4: Tags
