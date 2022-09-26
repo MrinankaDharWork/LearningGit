@@ -56,6 +56,13 @@
    42  git commit -m "second commit"
    43  git log
 
+####  show commits and view contents of commits.
+  141  git log --oneline
+  142  git show head    <---show the head note commit description
+  143  git show head~2.  <------- 2 step back from head node
+
+
+
 #### password less authentication
    ### Generate ssh keys
    44  ssh-keygen -t rsa
